@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Polynote: Solving the Scala Notebook Experience</title>
+  <meta charset="utf-8">
+<!--  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" />-->
+<!--  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">-->
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+  <script src="./remark-latest.min.js"></script>
+  <script>
+        var slideshow = remark.create({
+          sourceUrl: 'slides.md',
+          ratio: '16:9',
+          highlightStyle: 'solarized-dark',
+          highlightLanguage: 'scala',
+          highlightSpans: true,
+          highlightLines: true,
+          countIncrementalSlides: false
+        });
+        // setTimeout(function () {
+        //   document.getElementsByClassName('remark-inline-code').map(function(block) {
+        //       remark.highlighter.engine.highlightBlock(block);
+        //   });
+        //  }, 100);
+        function playCloneVideo() {
+          var cloneVideo = (slideshow.clone && slideshow.clone.document.querySelector('.remark-visible video')) ||
+                           (window.opener && window.opener.document.querySelector('.remark-visible video'));
+
+          if (cloneVideo) {
+            cloneVideo.play();
+          }
+        }
+
+        function pauseCloneVideo() {
+          var cloneVideo = (slideshow.clone && slideshow.clone.document.querySelector('.remark-visible video')) ||
+                  (window.opener && window.opener.document.querySelector('.remark-visible video'));
+
+          if (cloneVideo) {
+            cloneVideo.pause();
+          }
+        }
+      </script>
+  </body>
+</html>

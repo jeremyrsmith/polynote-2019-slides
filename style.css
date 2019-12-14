@@ -1,0 +1,507 @@
+html,
+body,
+.remark-slide-content {
+  background: #221F1F;
+  font-family: "Netflix Sans", "Gotham Book", "Gotham", sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  font-size: 32pt;
+  color: #F5F5F1;
+}
+strong {
+  /* Netflix Sans' normal weight is pretty heavy; makes bold hard to distinguish */
+  font-weight: 900;
+}
+.remark-slide-content {
+  padding: 36pt;
+}
+.remark-slide-content p:first-child {
+  margin-top: 0;
+}
+.remark-slide-content .logo,
+.remark-slide-content .symbol {
+  background: transparent no-repeat center center;
+  background-size: contain;
+  margin: 0 auto;
+  display: block;
+}
+.remark-slide-content .logo .alt,
+.remark-slide-content .symbol .alt {
+  display: none;
+}
+.remark-slide-content .logo {
+  background-image: url(netflix-logo.png);
+  display: block;
+  height: 32pt;
+}
+.remark-slide-content .symbol {
+  background-image: url(netflix-symbol.png);
+  height: 100pt;
+  width: 55pt;
+}
+.remark-slide-content h1 {
+  font-weight: 700;
+  font-family: "Netflix Sans", "Gotham Bold", "Gotham", sans-serif;
+  font-size: 42pt;
+  line-height: 1.1;
+  margin-top: 0;
+}
+.remark-slide-content h2 {
+  font-weight: 400;
+  font-family: "Netflix Sans", "Gotham Book", "Gotham", sans-serif;
+  font-size: 34pt;
+  border-left: 3pt solid #E50914;
+  text-align: left;
+  padding: 0 0 0 14pt;
+}
+.remark-slide-content blockquote {
+  border-left: 0.1em solid #E50914;
+  text-align: left;
+  padding: 0 0 0 0.5em;
+  font-style: italic;
+  margin-left: 0;
+}
+.remark-slide-content h3 {
+  font-weight: 500;
+  font-size: 32pt;
+}
+.remark-slide-content .remark-code,
+.remark-slide-content .remark-inline-code {
+  font-family: 'Hasklig', 'Menlo', fixed;
+  font-variant-ligatures: discretionary-ligatures;
+}
+.remark-slide-content .remark-inline-code {
+  padding: 0 !important;
+  display: inline !important;
+  background: transparent !important;
+  -webkit-filter: brightness(120%);
+  -webkit-filter: contrast(120%);
+  /*background: rgba(0, 43, 54, 0.5) !important;*/
+  color: #b7cdcf;
+}
+.remark-slide-content a {
+  color: #eaeaea;
+}
+.remark-slide-content .footnote {
+  position: absolute;
+  bottom: 3em;
+  font-size: 16pt;
+}
+.remark-slide-content .left {
+  float: left;
+}
+.remark-slide-content .left.half {
+  width: 49%;
+  float: left;
+}
+.remark-slide-content .left.forty {
+  float: left;
+  width: 39%;
+}
+.remark-slide-content .right {
+  float: right;
+}
+.remark-slide-content .left.half .right {
+  width: 49%;
+}
+.remark-slide-content .left.forty + .right {
+  width: 59%;
+}
+.remark-slide-content .clear {
+  clear: both;
+}
+.remark-slide-content .remark-inline-code {
+  padding: 0 0.2em;
+}
+.remark-slide-content .red {
+  color: #E50914;
+}
+.remark-slide-content .light {
+  font-weight: 300;
+}
+.remark-slide-content img {
+  display: block;
+  margin: 0 auto;
+}
+.remark-slide-content .sym {
+  font-family: serif;
+}
+.remark-slide-content .sym.i,
+.remark-slide-content .sym .i {
+  font-style: italic;
+}
+.remark-slide-content sub {
+  font-size: 60%;
+}
+.middle {
+  padding: 0 2em;
+}
+.middle h1 {
+  font-size: 50pt;
+}
+.middle p {
+  margin-bottom: 0;
+}
+.remark-slide-content.text-table table {
+  width: 100%;
+}
+.remark-slide-content.text-table table td,
+.remark-slide-content.text-table table th {
+  padding: 0.25em 0.5em;
+}
+.remark-slide-content.text-table table th {
+  text-align: left;
+}
+.remark-slide-content.two-column-table table {
+  border-collapse: collapse;
+}
+.remark-slide-content.two-column-table table td,
+.remark-slide-content.two-column-table table th {
+  vertical-align: top;
+}
+.remark-slide-content.two-column-table table th {
+  border-bottom: 1px solid white;
+  border-collapse: collapse;
+}
+.remark-slide-content.two-column-table table th:empty {
+  display: none;
+}
+.remark-slide-content.two-column-table table td:first-child,
+.remark-slide-content.two-column-table table th:first-child {
+  border-right: 1px solid white;
+  white-space: nowrap;
+}
+.center {
+  text-align: center;
+}
+.remark-slide-content.title {
+  background-image: url(netflix-symbol-big.png);
+  background-position: 280% center;
+  background-repeat: no-repeat;
+  padding: 2em 8em 0 2em;
+}
+.remark-slide-content.title h1 {
+  margin-right: 22%;
+  font-size: 50pt;
+  margin-bottom: 1em;
+  margin-block-end: 25pt;
+}
+.remark-slide-content.title h1 img {
+  margin: 0;
+}
+.remark-slide-content.title h2 {
+  font-size: 42pt;
+  margin-block-start: 14pt;
+  margin-block-end: 14pt;
+}
+.remark-slide-content.title h3 {
+  font-weight: 700;
+  font-size: 26pt;
+  margin: 0.5em 0;
+  float: left;
+  margin-right: 1em;
+}
+.remark-slide-content.title h3 .social {
+  padding-top: 0.5em;
+  position: relative;
+  font-weight: 300;
+  font-size: 80%;
+  display: block;
+}
+.remark-slide-content.title h3 .social .icons {
+  width: 2.5em;
+  display: inline-block;
+}
+.remark-slide-content.title h3 .social img {
+  width: 1em;
+  margin-right: 0.25em;
+  display: inline;
+}
+.remark-slide-content.title h4 {
+  clear: left;
+  font-weight: 400;
+  font-family: "Netflix Sans", "Gotham Book", "Gotham", sans-serif;
+  font-size: 16pt;
+  border-left: 3pt solid #E50914;
+  text-align: left;
+  padding: 0 0 0 14pt;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+}
+.remark-slide-content.slightly-smaller {
+  font-size: 28pt;
+}
+.remark-slide-content.slightly-smaller h1 {
+  font-size: 38pt;
+}
+.remark-slide-content.small-text {
+  font-size: 24pt;
+}
+.remark-slide-content.small-text h1 {
+  font-size: 36pt;
+}
+.remark-slide-content.left-text-right-img {
+  font-size: 24pt;
+}
+.remark-slide-content.left-text-right-img h1 {
+  font-size: 36pt;
+}
+.remark-slide-content.left-text-right-img p {
+  max-width: 75%;
+  word-break: break-word;
+  display: block;
+}
+.remark-slide-content.left-text-right-img p img {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+.symbol img {
+  width: 100pt;
+  display: block;
+}
+.remark-slide-content.center h2 {
+  border: none;
+  text-align: center;
+}
+.remark-code ::selection {
+  background: black;
+}
+.remark-slide-content.diagram {
+  background: white;
+}
+.remark-slide-content.diagram .diagram {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.remark-slide-content.diagram .diagram p {
+  margin: 0;
+  padding: 0;
+}
+.remark-slide-content.diagram .diagram img {
+  height: 100%;
+}
+.smallish-content {
+  font-size: 28pt;
+}
+.smallish-content h1 {
+  font-size: 38pt;
+}
+.smallish-content .remark-code {
+  font-size: 18pt;
+}
+.smallerish-content {
+  font-size: 24pt;
+}
+.smallerish-content h1 {
+  font-size: 34pt;
+}
+.smallerish-content .remark-code {
+  font-size: 16pt;
+}
+.small-content {
+  font-size: 20pt;
+}
+.small-content h1 {
+  font-size: 30pt;
+}
+.small-content .remark-code {
+  font-size: 14pt;
+}
+.smaller-content {
+  font-size: 18pt;
+}
+.tiny-code .remark-code {
+  font-size: 9pt;
+}
+.small-code .remark-code {
+  font-size: 12pt;
+}
+.small-code pre {
+  margin-top: 0;
+}
+.big-code .remark-code {
+  font-size: 30pt;
+}
+.smallish-code .remark-code {
+  font-size: 15pt;
+}
+.smallish-code pre {
+  margin-top: 0;
+}
+.biggish-code .remark-code {
+  font-size: 17pt;
+}
+.remark-code {
+  font-size: 19pt;
+}
+ul {
+  margin-bottom: 1em;
+}
+li {
+  margin: 0.5em;
+}
+.center {
+  text-align: center;
+}
+.magrit {
+  font-family: 'Satisfy', cursive;
+}
+.squeeze {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.squeeze-right {
+  padding-left: 25%;
+  padding-right: 15%;
+}
+.squeeze-more-right {
+  padding-left: 30%;
+  padding-right: 20%;
+}
+.st {
+  text-decoration: line-through;
+}
+.st .inner {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* highlighted lines contrast */
+.remark-code-line-highlighted {
+  background: #003f50;
+  color: #91a0a2;
+}
+.remark-code-span-highlighted {
+  background: #005469;
+  color: #9facad;
+  padding: 0;
+}
+.contrast-code .remark-code {
+  background: #002b3666;
+}
+.contrast-code .remark-code-line {
+  opacity: 0.5;
+}
+.contrast-code .remark-code-line.remark-code-line-highlighted {
+  opacity: 1;
+  background: #002b36;
+}
+.remark-slide-content img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.full-image {
+  padding: 0;
+}
+.full-image img {
+  position: absolute;
+  width: 100%;
+}
+.fit-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.fit-image p {
+  display: contents;
+}
+.end-title {
+  padding-right: 40%;
+  background-image: url(netflix-symbol-big.png);
+  background-repeat: no-repeat;
+  background-position: 214% center;
+}
+.smaller-image img {
+  width: 50%;
+  height: 50%;
+}
+.even-smaller-image img {
+  width: 45%;
+  height: 45%;
+}
+video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.video-controls {
+  display: none;
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  left: 50%;
+  top: 50%;
+  margin-left: -12.5%;
+  margin-top: -12.5%;
+  grid-template-columns: 1fr 1fr;
+}
+.video-controls button {
+  font-size: 80pt;
+}
+.remark-presenter-mode video {
+  display: none;
+}
+.remark-presenter-mode .video-controls {
+  display: grid;
+}
+/*
+.remark-code-line-highlighted {
+    background: #fdf6e3;
+    color: #657b83
+}
+
+.remark-code-line-highlighted .hljs-comment, .remark-code-line-highlighted .hljs-quote {
+    color: #93a1a1
+}
+
+.remark-code-line-highlighted .hljs-keyword, .remark-code-line-highlighted .hljs-selector-tag, .remark-code-line-highlighted .hljs-addition {
+    color: #859900
+}
+
+.remark-code-line-highlighted .hljs-number, .remark-code-line-highlighted .hljs-string, .remark-code-line-highlighted .hljs-meta .hljs-meta-string, .remark-code-line-highlighted .hljs-literal, .remark-code-line-highlighted .hljs-doctag, .remark-code-line-highlighted .hljs-regexp {
+    color: #2aa198
+}
+
+.remark-code-line-highlighted .hljs-title, .remark-code-line-highlighted .hljs-section, .remark-code-line-highlighted .hljs-name, .remark-code-line-highlighted .hljs-selector-id, .remark-code-line-highlighted .hljs-selector-class {
+    color: #268bd2
+}
+
+.remark-code-line-highlighted .hljs-attribute, .remark-code-line-highlighted .hljs-attr, .remark-code-line-highlighted .hljs-variable, .remark-code-line-highlighted .hljs-template-variable, .remark-code-line-highlighted .hljs-class .hljs-title, .remark-code-line-highlighted .hljs-type {
+    color: #b58900
+}
+
+.remark-code-line-highlighted .hljs-symbol, .remark-code-line-highlighted .hljs-bullet, .remark-code-line-highlighted .hljs-subst, .remark-code-line-highlighted .hljs-meta, .remark-code-line-highlighted .hljs-meta .hljs-keyword, .remark-code-line-highlighted .hljs-selector-attr, .remark-code-line-highlighted .hljs-selector-pseudo, .remark-code-line-highlighted .hljs-link {
+    color: #cb4b16
+}
+
+.remark-code-line-highlighted .hljs-built_in, .remark-code-line-highlighted .hljs-deletion {
+    color: #dc322f
+}
+
+.remark-code-line-highlighted .hljs-formula {
+    background: #eee8d5
+}
+
+.hljs-solarized-light .hljs-emphasis {
+    font-style: italic
+}
+
+.hljs-solarized-light .hljs-strong {
+    font-weight: bold
+}
+
+/**/
+.remark-notes-area {
+  font-size: 12pt;
+}
+.remark-slide-number {
+  font-size: 20pt;
+}
